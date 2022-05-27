@@ -12,7 +12,7 @@ header {
 
 
 /* Header */
-header div.title {
+.title {
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
@@ -25,21 +25,21 @@ header div.title {
     box-shadow: 10px 10px 2px 1px;
 }
 
-header div.title:not(:hover) {
+.title:not(:hover) {
     transform: scale(1);
     transition: 0.5s;
 }
 
-header div.title:hover {
+.title:hover {
     transform: scale(1.2);
     transition: 0.5s;
 }
 
-header div.title h1 {
+.title h1 {
     font-size: 600%;
 }
 
-header div.title h2 {
+.title h2 {
     font-size: 160%;
     font-family: 'Inconsolata', cursive;
 }
@@ -51,33 +51,51 @@ header img {
 
 
 /* Navigation */
-nav.nav {
+.nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-nav.nav ul li {
+.nav ul li {
     list-style-type: none;
     display: inline-block;
 }
 
-nav.nav ul li:hover {
+.nav ul li:hover {
     transform: scale(0.8);
     transition: 0.2s all;
 }
 
-nav.nav ul li:not(:hover) {
+.nav ul li:not(:hover) {
     transform: scale(1);
     transition: 0.2s all;
 }
 
-nav.nav ul img.navimage {
+.nav ul img.navimage {
     width: 150px;
     display: flex;
     padding: 100px;
 }
 
+.uparrow {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    left: 47%;
+    padding: 10;
+    z-index: 100;
+}
+
+.uparrow:hover {
+    transform: scale(0.8);
+    transition: 0.2s all;
+}
+
+.uparrow:not(:hover) {
+    transform: scale(1);
+    transition: 0.2s all;
+}
 
 /* Sections */
 .subtitle h3 {
@@ -121,7 +139,7 @@ display: inline-block;
 
 /* Footer */
 
-footer p.copyright {
+.copyright {
     display: flex;
     justify-content: center;
 }
@@ -130,7 +148,7 @@ footer ul li {
     list-style-type: square;
 }
 
-footer div.credits {
+.credits {
     display: flex;
     justify-content: center;
     font-size: 125%;
