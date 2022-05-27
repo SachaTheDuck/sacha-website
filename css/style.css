@@ -23,6 +23,7 @@ header {
     line-height: 0px;
     border: 2px groove black;
     box-shadow: 10px 10px 2px 1px;
+    text-decoration: none;
 }
 
 .title:not(:hover) {
@@ -37,11 +38,13 @@ header {
 
 .title h1 {
     font-size: 600%;
+    color: #23272A;
 }
 
 .title h2 {
     font-size: 160%;
     font-family: 'Inconsolata', cursive;
+    color: #23272A;
 }
 
 header img {
@@ -101,6 +104,7 @@ header img {
 /* Sections */
 .subtitle h3 {
     font-size: 400%;
+    color: #23272A;
 }
 
 .subtitle {
@@ -111,6 +115,7 @@ header img {
     font-size: 200%;
     padding-left: 5%;
     font-family: 'Inconsolata', cursive;
+    color: #23272A;
 }
 
 .section-list li {
@@ -145,6 +150,10 @@ display: inline-block;
     justify-content: center;
 }
 
+footer {
+    color: #23272A;
+}
+
 footer ul li {
     list-style-type: square;
 }
@@ -156,6 +165,5 @@ footer ul li {
 }
 
 footer p a {
-    color: black;
     text-decoration: none;
 }
